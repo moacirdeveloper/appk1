@@ -1,6 +1,7 @@
 import React from "react";
 import AppHeader from "./AppHeader";
 import AppMenu from "./AppMenu";
+import AppMenuBar from "./AppMenuBar";
 import "../css/AppContainer.css"
 
 
@@ -12,6 +13,7 @@ function AppContainer(){
 
             <AppHeader />
             <AppMenu />
+            <AppMenuBar />
 
         </div>
 

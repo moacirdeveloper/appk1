@@ -1,0 +1,33 @@
+.divMenuBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 0.8em;
+    background-color: rgb(121, 102, 102);
+    color: white;
+}
+.pLogo{
+    font-size: 2rem;
+    flex: 40%;
+}
+.linkMenuBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 60%;
+
+}
+.buscaDados{
+    display: flex;
+}
+.buscaDados input{
+    background-color: white;
+    padding: 5px;
+}
+.buscaDados input[type="text"]{
+    border-radius: 3px 0px 0px 3px;
+}
+.buscaDados input[type="button"]{
+    border-radius: 0px 3px 3px 0px;
+}
