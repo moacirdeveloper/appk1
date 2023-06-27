@@ -10,13 +10,3 @@
 :root{
     background-color: black;
 }
-
-.container{
-    background-color: white;
-    border: 1px solid black;
-    width: 60%;
-    min-height: 600px ;
-    margin: 0px auto;
-    
-
-}
