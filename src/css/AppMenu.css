@@ -1,0 +1,23 @@
+.navLink{
+
+    background-color: rgb(65, 61, 61);
+    width: 100%;
+
+}
+.ulNavLink{
+    display: flex;
+
+}
+.ulNavLink li{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+    cursor: pointer;
+    flex: 1;
+}
+.ulNavLink li:hover{
+    color: yellow;
+    background-color: rgb(104, 95, 95);
+}
+

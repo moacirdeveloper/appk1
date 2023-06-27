@@ -6,7 +6,7 @@ function AppHeader(){
     return (
 
         <header className="header">    
-            <h2>My Web Testando GitHub</h2>
+            <h2>My Web em desenvolvimento</h2>
         </header>
     )
 }
