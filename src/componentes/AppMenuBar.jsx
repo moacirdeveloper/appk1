@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../css/AppMenuBar.css";
 
 function AppMenuBar(){
@@ -9,7 +10,7 @@ function AppMenuBar(){
             <p className="pLogo">LOGO</p>
             <div className="linkMenuBar">
                 <span>EXIBIR</span>
-                <span>CADASTRAR</span>
+                <span><Link to="/cadastrar" >CADASTRAR</Link></span>
                 <div className="buscaDados">
                     <input type="text" />
                     <input type="button" value="BUSCAR"/>

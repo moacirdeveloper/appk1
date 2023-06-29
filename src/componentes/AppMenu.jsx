@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 import "../css/AppMenu.css";
 
 function AppMenu() {
@@ -29,7 +30,7 @@ function AppMenu() {
                 <li onClick={() => abreModal()}>MODAL</li>
                 <li>ADM</li>
                 <li>CARRINHO</li>
-                <li>CEP</li>
+                <li><Link to="/buscacep">CEP</Link></li>
             </ul>
 
             <div className="fade">

@@ -18,6 +18,9 @@
     flex: 60%;
 
 }
+.linkMenuBar span > a{
+    color: white;
+}
 .buscaDados{
     display: flex;
 }

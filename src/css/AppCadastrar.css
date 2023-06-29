@@ -1,0 +1,30 @@
+.containerCadastrar{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgb(202, 187, 187);
+    margin: 30px auto;
+    padding: 10px;
+}
+.dadosCadastrar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.dadosCadastrar input, textarea{
+    padding: 5px;
+    font-size: 0.8rem;
+    background-color: white;
+}
+.botoesCadastrar{
+    display: flex;
+    justify-content: space-between;
+}
+.botoesCadastrar input[type="button"]{
+    color: white;
+    background-Color: black;
+    font-size: 0.6rem;
+    flex: 1;
+    border: 1px solid white;
+}

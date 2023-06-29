@@ -16,7 +16,14 @@
     cursor: pointer;
     flex: 1;
 }
+.ulNavLink a{
+    color: white;
+}
 .ulNavLink li:hover{
+    color: yellow;
+    background-color: rgb(104, 95, 95);
+}
+.ulNavLink li > a:hover{
     color: yellow;
     background-color: rgb(104, 95, 95);
 }
