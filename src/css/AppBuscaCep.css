@@ -12,9 +12,26 @@
 }
 .dadosBuscaCep{
     display: flex;
+    text-align: center;
     flex-direction: column;
     width: 100%;
     border: 1px solid white;
     min-height: 200px;
     padding: 10px;
+}
+.containerBuscaCep input{
+    background-color: black;
+    border-color: white;
+    border-radius: 2px;
+    color: white;
+    outline: 1px solid rgba(255, 255, 255, 0.377);
+}
+.valorDigitadoInput{
+    display: flex;
+}
+svg{
+    color: white;
+    font-size: 1.3em;
+    margin-left: 10px;
+
 }

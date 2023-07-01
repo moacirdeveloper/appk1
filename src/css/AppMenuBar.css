@@ -27,6 +27,7 @@
 .buscaDados input{
     background-color: white;
     padding: 5px;
+    color: black;
 }
 .buscaDados input[type="text"]{
     border-radius: 3px 0px 0px 3px;
