@@ -28,7 +28,7 @@ function AppMenu() {
 
             <ul className="ulNavLink">
                 <li onClick={() => abreModal()}>MODAL</li>
-                <li>ADM</li>
+                <li><Link to="/filtro">FILTRO</Link></li>
                 <li>CARRINHO</li>
                 <li><Link to="/buscacep">CEP</Link></li>
             </ul>

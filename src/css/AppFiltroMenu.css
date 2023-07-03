@@ -1,0 +1,19 @@
+.filtroMenu{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    border: 1px solid white;
+    padding: 20px;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.listaFiltroMenu{
+    border: 1px solid yellow;
+    color: white;
+    padding: 20px;
+}
+.filtroMenu input[type="text"]{
+    border: 1px solid rgba(255, 255, 255, 0.562);
+}

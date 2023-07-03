@@ -24,7 +24,10 @@ function AppBuscaCep(){
             setCep(data)
             console.log(data)
         })
-        .catch((err) => console.log(err))
+        .catch((err) => {
+            //console.log(err)
+            alert("Cep Inválido ! ! !")
+        })
 
         
 
