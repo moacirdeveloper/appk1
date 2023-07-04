@@ -16,6 +16,7 @@
     padding: 5px;
     font-size: 0.8rem;
     background-color: white;
+    color: black;
 }
 .botoesCadastrar{
     display: flex;
@@ -27,4 +28,12 @@
     font-size: 0.6rem;
     flex: 1;
     border: 1px solid white;
+}
+#retorno{
+    display: none;
+    justify-content: center;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    margin-top: 10px;
 }
