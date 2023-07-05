@@ -20,7 +20,7 @@ function AppFiltroMenu(){
 
         for(let li of itensLista){
 
-            if(li.textContent.includes(busca)){
+            if(li.textContent.toLowerCase().includes(busca.toLowerCase())){
 
                 li.style.display = "block";
 
@@ -40,12 +40,24 @@ function AppFiltroMenu(){
             <input ref={inputFiltro} type="text" name="" id="" onBlur={ () => filtrarLista() } />
             <ul ref={ulLista} className="listaFiltroMenu">
                 
-                <li>Limao</li>
-                <li>Banana</li>
-                <li>Uva</li>
-                <li>Abacate</li>
-                <li>Melancia</li>
-                
+                <li>Frutas
+                    <ul className="frutas">
+                        <li>Limao</li>
+                        <li>Banana</li>
+                        <li>Uva</li>
+                        <li>Abacate</li>
+                        <li>Melancia</li>
+                    </ul>
+                </li>
+                <li>Paises
+                    <ul className="paises">
+                        <li>Franca</li>
+                        <li>Alemanha</li>
+                        <li>Italia</li>
+                        <li>Russia</li>
+                        <li>Argentina</li>
+                    </ul>
+                </li>
             </ul>
         </div>
     )

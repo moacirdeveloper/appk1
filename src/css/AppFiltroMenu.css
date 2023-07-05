@@ -14,6 +14,9 @@
     color: white;
     padding: 20px;
 }
+.listaFiltroMenu ul li{
+    margin-left: 20px;
+}
 .filtroMenu input[type="text"]{
     border: 1px solid rgba(255, 255, 255, 0.562);
 }
