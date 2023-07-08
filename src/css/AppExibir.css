@@ -1,0 +1,29 @@
+.divExibir{
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 60%; 
+    max-height: 380px;
+    margin: 10px auto;
+    overflow-y: scroll;
+    
+}
+
+.divItem{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(219, 213, 213);
+    border-bottom: 1px solid rgba(100, 89, 89, 0.342);
+    transition: 1s;
+}
+.divItem span svg{
+    color: black;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.divItem:hover{
+    background-color: rgb(196, 191, 191);
+}

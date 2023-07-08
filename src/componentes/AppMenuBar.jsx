@@ -9,7 +9,7 @@ function AppMenuBar(){
         <div className="divMenuBar">
             <p className="pLogo">LOGO</p>
             <div className="linkMenuBar">
-                <span>EXIBIR</span>
+                <span><Link to="/exibir">EXIBIR</Link></span>
                 <span><Link to="/cadastrar" >CADASTRAR</Link></span>
                 <div className="buscaDados">
                     <input type="text" />
