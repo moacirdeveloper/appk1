@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import AppCadastrar from "../paginas/AppCadastrar";
 import AppBuscaCep from "../paginas/AppBuscaCep";
 import AppFiltroMenu from "../paginas/AppFiltroMenu";
+import AppFiltroMenuBar from "../paginas/AppFiltroMenuBar";
 import "../css/AppConteudo.css";
 
 function AppConteudo(){
@@ -16,6 +17,7 @@ function AppConteudo(){
                         <Route path="/cadastrar" element={<AppCadastrar />} />
                         <Route path="/buscacep" element={<AppBuscaCep />} />
                         <Route path="/filtro" element={<AppFiltroMenu />}></Route>
+                        <Route path="/filtrobar" element={<AppFiltroMenuBar />} ></Route>
                 </Routes>   
 
             </div>
