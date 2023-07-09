@@ -19,7 +19,7 @@ function AppFiltroMenuBar() {
 
         detailTag.forEach(item => {
 
-            console.log(item);
+            //console.log(item);
 
             const itemSummary = item.querySelector("summary");
             //const itemli = item.querySelector("li");
