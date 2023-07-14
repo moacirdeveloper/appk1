@@ -28,6 +28,7 @@ function AppMenu() {
 
             <ul className="ulNavLink">
                 <li onClick={() => abreModal()}>MODAL</li>
+                <li><Link to="/signin" >SIGN IN</Link></li>
                 <li>MENU</li>
                 <li><Link to="/filtroprodutos">FILTRO</Link></li>
                 <li><Link to="/buscacep">CEP</Link></li>
