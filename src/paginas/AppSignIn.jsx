@@ -1,16 +1,19 @@
 import React from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import "../css/AppSignIn.css";
 
 function AppSignIn(){
 
+    let [ dbUsuarios, setDbUsuarios ] = useState([])
+
     useEffect( () => {
 
-        const retorno = JSON.parse(localStorage.getItem("dbUsuarios"))
+        const retorno = JSON.parse(localStorage.getItem("dbUsers"))
+        //setDbUsuarios(JSON.parse(localStorage.getItem("dbUsuarios")));
 
         if(retorno === null){
-            localStorage.dbUsuarios = "[]";
+            localStorage.dbUsers = "[]";
         }
 
     },[])
@@ -20,7 +23,10 @@ function AppSignIn(){
         let usuario = document.getElementById("inputUsuario");
         let senha = document.getElementById("inputSenha");
 
-        const dbUsuarios = JSON.parse(localStorage.getItem("dbUsuarios"));
+        //const dbUsuarios = JSON.parse(localStorage.getItem("dbUsuarios"));
+        //setDbUsuarios(JSON.parse(localStorage.getItem("dbUsuarios")));
+
+        //console.log(usuario.value)
 
         if(usuario.value === "" || senha.value === ""){
             alert("Dados de Entrada Inválidos ou Nulos ! ! !");
@@ -29,7 +35,7 @@ function AppSignIn(){
         }else{
 
             if(dbUsuarios === []){
-                alert("Usuario Não Cadastrado ! ! !");
+                alert("Não Existem Usuarios Cadastrados !");
                 
             }else{
 
@@ -80,11 +86,20 @@ function AppSignIn(){
             pass: senha.value
         }
 
-        let arrBancoUsuario = JSON.parse(localStorage.getItem("dbUsuarios"));
+        //let arrBancoUsuario = JSON.parse(localStorage.getItem("dbUsuarios"));
+        //setDbUsuarios( JSON.parse(localStorage.getItem("dbUsuarios")) );
 
-        arrBancoUsuario.push(objUsuario);
+        console.log(dbUsuarios)
 
-        localStorage.setItem("dbUsuarios", JSON.stringify(arrBancoUsuario));
+        //arrBancoUsuario.push(objUsuario);
+
+        setDbUsuarios([...dbUsuarios, objUsuario]);
+
+        //console.log(objUsuario);
+        //console.log(dbUsuarios);
+
+        //localStorage.setItem("dbUsuarios", JSON.stringify(arrBancoUsuario));
+        localStorage.setItem("dbUsers", JSON.stringify(dbUsuarios));
 
         alert("Usuario Cadastrado Com Sucesso ! ! !");
 

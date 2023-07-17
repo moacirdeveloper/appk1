@@ -16,12 +16,22 @@ function AppExibir(){
 
     }, [])
 
+    function excluirNoticia(param){
+        
+        const arrayNova =  arrNoticia.filter( (item) => item.titulo !== param );
+
+        setArrNoticia(arrayNova);
+
+        localStorage.setItem("dbNoticia", JSON.stringify(arrayNova));
+
+    }
+
     return (
 
         <div className="divExibir">
             {arrNoticia.map( (item) => {
 
-                return <div className="divItem" key={indice++}>{item.titulo + " - " + item.noticia} <span><FaEdit /><FaTrash /></span></div>
+                return <div className="divItem" key={indice++}>{item.titulo + " - " + item.noticia} <span><FaEdit /><FaTrash onClick={() => excluirNoticia(item.titulo)} /></span></div>
 
             })}
             

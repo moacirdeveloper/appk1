@@ -35,3 +35,29 @@
 .buscaDados input[type="button"]{
     border-radius: 0px 3px 3px 0px;
 }
+
+@media( max-width: 900px){
+
+    .pLogo{
+        display: none;
+    }
+    .linkMenuBar{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .buscaDados{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .divMenuBar{
+        padding: 20px 
+    }
+}
+
+@media(max-width: 690px){
+
+    .divMenuBar{
+        display: none;
+    }
+
+}

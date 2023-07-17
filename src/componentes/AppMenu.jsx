@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/AppMenu.css";
 
@@ -6,7 +6,7 @@ function AppMenu() {
 
     const [modal] = useState("fadeAbrir")
 
-    function abreModal(){
+    function abreModal() {
 
         let abreModal = document.querySelector(".fade");
 
@@ -14,7 +14,7 @@ function AppMenu() {
 
     }
 
-    function fechaModal(){
+    function fechaModal() {
 
         let fechaModal = document.querySelector(".fade");
 
@@ -22,12 +22,15 @@ function AppMenu() {
 
     }
 
+
+
     return (
 
         <div className="navLink">
 
             <ul className="ulNavLink">
-                <li onClick={() => abreModal()}>MODAL</li>
+
+                <li onClick={ () => abreModal() }>MODAL</li>
                 <li><Link to="/signin" >SIGN IN</Link></li>
                 <li>MENU</li>
                 <li><Link to="/filtroprodutos">FILTRO</Link></li>
