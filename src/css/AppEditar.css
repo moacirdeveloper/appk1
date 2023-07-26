@@ -1,0 +1,22 @@
+.divEditar{
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(124, 102, 102);
+    width: 50%;
+    max-height: 400px;
+    padding: 20px;
+    margin: 5px auto;
+    color: black;
+    border-radius: 3px;
+    gap: 20px;
+
+}
+
+.divEditar input[type="button"]{
+    background-color: black;
+}
+
+.divEditar input[type="text"]{
+    background-color: black;
+}

@@ -6,6 +6,7 @@ import AppFiltroMenu from "../paginas/AppFiltroMenu";
 import AppFiltroMenuBar from "../paginas/AppFiltroMenuBar";
 import AppFiltroFetch from "../paginas/AppFiltroFetch";
 import AppExibir from "../paginas/AppExibir";
+import AppEditar from "../paginas/AppEditar";
 import AppSignIn from "../paginas/AppSignIn";
 
 import "../css/AppConteudo.css";
@@ -23,6 +24,7 @@ function AppConteudo(){
                         <Route path="/filtro" element={<AppFiltroMenu />}></Route>
                         <Route path="/filtrobar" element={<AppFiltroMenuBar />}></Route>
                         <Route path="/filtroprodutos" element={<AppFiltroFetch />}></Route>
+                        <Route path="/editar/:obj" element={<AppEditar />}></Route>
                         <Route path="/exibir" element={<AppExibir />}></Route>
                         <Route path="/signin" element={<AppSignIn />}></Route>
                 </Routes>   

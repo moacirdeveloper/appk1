@@ -18,12 +18,13 @@ function AppCadastrar(){
     
         }
     
-    }, [    ]);
+    }, []);
 
     function incluirDados(){
 
         const tituloInput = document.getElementById("titulo");
         const noticiaTextarea = document.getElementById("noticia");
+
         let dadosFormulario = {}
 
         if(tituloInput.value && noticiaTextarea.value){
@@ -40,6 +41,7 @@ function AppCadastrar(){
             localStorage.setItem("dbNoticia", JSON.stringify(dbNoticia));
 
             const aviso = document.getElementById("retorno");
+            
             aviso.style.display = "flex";
             tituloInput.value = "";
             noticiaTextarea.value = "";
