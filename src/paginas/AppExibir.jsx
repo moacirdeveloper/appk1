@@ -15,13 +15,13 @@ function AppExibir(){
 
     useEffect( () => {
 
-        setArrNoticia( JSON.parse(localStorage.getItem("dbNoticia")));
-
-    }, [])
+        setArrNoticia( JSON.parse( localStorage.getItem("dbNoticia") ) );
+        
+    }, []);
 
     function excluirNoticia(param){
         
-        const arrayNova =  arrNoticia.filter( (item) => item.titulo !== param );
+        const arrayNova = arrNoticia.filter( (item) => item.titulo !== param );
 
         setArrNoticia(arrayNova);
 
@@ -34,9 +34,14 @@ function AppExibir(){
         let arrEditar = arrNoticia.filter( (item) => item.titulo === param)
 
         if(arrEditar){
+            
             navigate(`/editar/${arrEditar[0].titulo}`);
+            //navigate(`/exibir/${arrEditar[0].titulo}`);
+
         }else{
+
             console.log("Erro");
+
         }
 
         console.log(param);
