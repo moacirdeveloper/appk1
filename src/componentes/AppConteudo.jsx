@@ -26,6 +26,7 @@ function AppConteudo(){
                         <Route path="/filtroprodutos" element={<AppFiltroFetch />}></Route>
                         <Route path="/editar/:obj" element={<AppEditar />}></Route>
                         <Route path="/exibir" element={<AppExibir />}></Route>
+                        <Route path="/exibir/:busca" element={<AppExibir />}></Route>
                         <Route path="/signin" element={<AppSignIn />}></Route>
                 </Routes>   
 
