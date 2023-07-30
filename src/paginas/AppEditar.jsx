@@ -12,11 +12,15 @@ function AppEditar(){
     let [inputT, setInputT] = useState("");
     let [inputN, setInputN] = useState("");
 
+    let [load, setLoad] = useState(false);
+
     let { obj } = useParams();
 
     useEffect( () => {
 
-        setTimeout( () => {arrNoticia = JSON.parse(localStorage.getItem("dbNoticia"));
+        setTimeout( () => {
+            
+        arrNoticia = JSON.parse(localStorage.getItem("dbNoticia"));
 
         let arrStorageNew = arrNoticia.filter( (item) => {
             return item.titulo.includes(obj);
@@ -27,6 +31,9 @@ function AppEditar(){
 
         console.log(arrStorageNew);
         console.log(arrNoticia);
+
+        setLoad(true);
+
         }, 5000);
 
     }, [obj]);
@@ -43,6 +50,8 @@ function AppEditar(){
 
     function editarNoticia(){
 
+        const spanMensagem = document.getElementById("spanId");
+
         const novoDbNoticia = arrNoticia.map( item => {
             
             if(item.titulo.includes(obj)){
@@ -56,7 +65,17 @@ function AppEditar(){
 
         localStorage.setItem("dbNoticia", JSON.stringify(novoDbNoticia));
 
-        alert("Atualização Efetuado com Sucesso !");
+        //alert("Atualização Efetuado com Sucesso !");
+
+        spanMensagem.style.display = "block";
+        spanMensagem.innerText = "Alteração Efetuada ! ! !";
+
+        setTimeout( () => {
+
+            spanMensagem.innerText = "";
+            spanMensagem.style.display = "none";
+
+        }, 3000);
 
     }
 
@@ -74,7 +93,7 @@ function AppEditar(){
 
         <>
 
-        {inputT ? (
+        {load ? (
 
             <div className="divEditar">
 
@@ -86,12 +105,13 @@ function AppEditar(){
                 <span id="spanId"></span>
             
             </div>
+
         
         ) : (
 
             <div className="divEditar">
 
-            <AppLoading />
+                <AppLoading />
 
             </div>
 

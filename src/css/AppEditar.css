@@ -20,3 +20,10 @@
 .divEditar input[type="text"]{
     background-color: black;
 }
+#spanId{
+    display: none;
+    background-color: white;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px;
+}
