@@ -1,6 +1,6 @@
 import React from "react";
 import {useState, useEffect} from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import AppLoading from "../layout/AppLoading";
 
 import "../css/AppEditar.css";
@@ -13,6 +13,8 @@ function AppEditar(){
     let [inputN, setInputN] = useState("");
 
     let [load, setLoad] = useState(false);
+
+    let navigate = useNavigate();
 
     let { obj } = useParams();
 
@@ -74,6 +76,7 @@ function AppEditar(){
 
             spanMensagem.innerText = "";
             spanMensagem.style.display = "none";
+            navigate("/exibir");
 
         }, 3000);
 

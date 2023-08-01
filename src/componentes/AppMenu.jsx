@@ -6,6 +6,19 @@ function AppMenu() {
 
     const [modal] = useState("fadeAbrir")
 
+    function abreMenu(){
+
+        const btnMenu = document.getElementById("openMenu");
+        const ulNav = document.getElementById("ulNavMenu")
+
+        btnMenu.addEventListener("click", () => {
+
+        ulNav.classList.toggle("active");
+        
+        })
+
+    }
+
     function abreModal() {
 
         let abreModal = document.querySelector(".fade");
@@ -22,13 +35,13 @@ function AppMenu() {
 
     }
 
-
-
     return (
 
         <div className="navLink">
 
-            <ul className="ulNavLink">
+            <button id="openMenu" onClick={ () => abreMenu() } >&#9776;</button>
+
+            <ul id="ulNavMenu" className="ulNavLink">
 
                 <li onClick={ () => abreModal() }>MODAL</li>
                 <li><Link to="/signin" >SIGN IN</Link></li>
